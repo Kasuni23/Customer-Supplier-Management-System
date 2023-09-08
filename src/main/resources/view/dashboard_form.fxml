@@ -1,14 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.customersuppliermanagementsystem.controller.DashboardFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="617.0" prefWidth="848.0" style="-fx-background-color: #00d2d3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customersuppliermanagementsystem.controller.DashboardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="164.0" layoutY="44.0" text="Customer Supplier Management System" textFill="#e3171c">
+         <font>
+            <Font name="Bodoni MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="49.0" layoutY="139.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="166.0" style="-fx-background-color: #dfe4ea;" text="DashBoard" textFill="#2f08f2">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/dashboard.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="49.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="76.0" prefWidth="165.0" style="-fx-background-color: #dfe4ea;" text="Customer" textFill="#2f08f2">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/customer.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="49.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="72.0" prefWidth="166.0" style="-fx-background-color: #dfe4ea;" text="Item" textFill="#3111e7">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/item.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="49.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="72.0" prefWidth="166.0" style="-fx-background-color: #dfe4ea;" text="Supplier" textFill="#280be7">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/supplier.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="49.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="72.0" prefWidth="166.0" style="-fx-background-color: #dfe4ea;" text="Log Out" textFill="#280be7">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logout.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="node" layoutX="252.0" layoutY="139.0" prefHeight="446.0" prefWidth="558.0" style="-fx-background-image: #ff9ff3;">
+         <children>
+            <AreaChart layoutX="14.0" layoutY="23.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
