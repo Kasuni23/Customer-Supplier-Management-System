@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="617.0" prefWidth="848.0" style="-fx-background-color: #00d2d3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customersuppliermanagementsystem.controller.DashboardFormController">
+<AnchorPane fx:id="rootNode" prefHeight="617.0" prefWidth="848.0" style="-fx-background-color: #00d2d3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customersuppliermanagementsystem.controller.DashboardFormController">
    <children>
       <Label alignment="CENTER" layoutX="164.0" layoutY="44.0" text="Customer Supplier Management System" textFill="#e3171c">
          <font>
