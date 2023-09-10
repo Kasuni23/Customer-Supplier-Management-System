@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="root" prefHeight="538.0" prefWidth="379.0" style="-fx-background-color: #ff9ff3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customersuppliermanagementsystem.controller.LoginFormController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="122.0" layoutY="88.0" prefHeight="48.0" prefWidth="136.0" text="Login" textFill="#151391">
@@ -38,7 +37,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="230.0" layoutY="374.0" text="Register Here" textFill="#1616d1">
+      <Label layoutX="230.0" layoutY="374.0" onMouseClicked="#eventrejister" text="Register Here" textFill="#1616d1">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>

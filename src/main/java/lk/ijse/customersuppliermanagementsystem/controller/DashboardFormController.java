@@ -12,24 +12,28 @@ public class DashboardFormController {
     public AnchorPane rootNode;
 
     public void btnCustomerOnAction(ActionEvent actionEvent) throws IOException {
+        // customer
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/customer_form.fxml"));
         this.node.getChildren().clear();
         this.node.getChildren().add(root);
     }
 
     public void btnItemOnAction(ActionEvent actionEvent) throws IOException {
+        // item
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/item_form.fxml"));
         this.node.getChildren().clear();
         this.node.getChildren().add(root);
     }
 
     public void btnSupplierOnAction(ActionEvent actionEvent) throws IOException {
+        // supplier
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/supplier_form.fxml"));
         this.node.getChildren().clear();
         this.node.getChildren().add(root);
     }
 
     public void btnLogoutOnAction(ActionEvent actionEvent) throws IOException {
+        //logout
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/logout_form.fxml"));
         this.node.getChildren().clear();
         this.node.getChildren().add(root);
